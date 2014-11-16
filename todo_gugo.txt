@@ -1,0 +1,7 @@
+GUGO TODO LIST
+
+just for learning purposes
+
+1. find a more advenced way to write the alphabet
+2. how not to use the serial port?
+3. don't know yet
