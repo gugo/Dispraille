@@ -35,7 +35,7 @@ int slndState = LOW;             // slndState used to set the LED
 unsigned long previousMillis = 0;        // will store last time LED was updated
 
 // constants won't change :
-const long interval = 250;           // interval at which to blink (milliseconds)
+const long intervalOn = 100, intervalOff = 300;         // interval at which to blink (milliseconds)
 
 void setup() {
   // set the digital pin as output:
@@ -54,7 +54,7 @@ void loop()
   // blink the LED.
   unsigned long currentMillis = millis();
  
-  if(currentMillis - previousMillis >= interval) {
+  if(currentMillis - previousMillis >= intervalOn) {
     // save the last time you blinked the LED 
     previousMillis = currentMillis;   
 
